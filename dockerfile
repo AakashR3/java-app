@@ -5,6 +5,5 @@ EXPOSE 1234
 #RUN apt-get install -y maven
 COPY pom.xml /SampleMavenWeb/pom.xml
 COPY src /src/main/main/webapp/WEB-INF/App.java 
-COPY target /SampleMavenWeb*.war /usr/local/tomcat/webapps/SampleMavenWeb.war ./
-#WORKDIR  /JavaProject/FirstProject
+COPY target /SampleMavenWeb*.war 
 #RUN mvn package
